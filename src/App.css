@@ -1,0 +1,173 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #121212;  /* Dark mode background */
+  color: #E0E0E0;  /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  margin: 0;
+}
+
+/* Main App Style */
+.app {
+  margin-top: 80vh;
+  width: 100%;
+  max-width: 800px;
+  padding: 40px;
+  padding-top: 60px;  /* Add extra padding at the top */
+  padding-bottom: 60px;  /* Add extra padding at the bottom */
+  background-color: #1F1F1F;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #E0E0E0;
+}
+
+/* Heading */
+.heading-text {
+  font-size: 28px;
+  color: #3498db;  /* Blue Accent Color */
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Section */
+.image-container {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.suprise-button,
+.action-button,
+.clear-button {
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.suprise-button {
+  padding: 10px 35px;
+  margin-bottom: 10px;
+  background-color: #e71549;  /* Blue */
+  color: white;
+}
+
+.suprise-button:hover {
+  background-color: #2980b9;  /* Darker Blue */
+  transform: translateY(-3px);
+}
+
+.action-button {
+  background-color: #3498db;  /* Blue */
+  color: white;
+}
+
+.action-button:hover {
+  background-color: #2980b9;  /* Darker Blue */
+  transform: translateY(-3px);
+}
+
+.clear-button {
+  background-color: #2C3E50;  /* Dark Blue */
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #34495E;  /* Slightly lighter dark blue */
+  transform: translateY(-3px);
+}
+
+/* Input Field */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.input-field {
+  padding: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid #444;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 520px;
+  background-color: #2C2C2C;
+  color: #E0E0E0;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #3498db;  /* Blue focus */
+  outline: none;
+  box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.input-field::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+/* Error and Response Messages */
+.error-message,
+.response-message {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: tomato;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app {
+    max-width: 90%;
+    padding: 30px;
+    padding-top: 40px;  /* Reduced padding for smaller screens */
+    padding-bottom: 40px;
+  }
+
+  .heading-text {
+    font-size: 24px;
+  }
+
+  .suprise-button,
+  .action-button,
+  .clear-button {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+}
