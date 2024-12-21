@@ -28,3 +28,14 @@ To run this project locally, follow these steps:
 1. Clone this repository to your local machine:
    ```bash
    git clone https://github.com/your-username/image-analysis-web-app.git
+
+image-analysis-web-app/
+├── public/
+│   └── index.html                # HTML entry point for the app
+├── src/
+│   ├── App.js                    # Main React component for the app
+│   ├── index.js                  # Entry point for React
+│   ├── styles.css                # Global styles for the app
+├── package.json                  # Project metadata and dependencies
+└── README.md                     # This file
+
